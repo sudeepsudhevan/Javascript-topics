@@ -247,7 +247,7 @@ console.log(getYearArrow(publicationDate));
 ```
 
 ## Logical Operators
-```
+```js
 // const book = getBook(2); Taking book 2
 // short circuiting
 
