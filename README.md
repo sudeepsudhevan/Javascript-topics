@@ -234,7 +234,7 @@ console.log(s)
 ```
 ## Arrow Functions
 
-```
+```js
 function getYear(str) { // when using function
   return str.split("-")[0];
 }
