@@ -245,3 +245,52 @@ const getYearArrow = (str) => str.split("-")[0]; // when using arrow function
 console.log(getYear(publicationDate));
 console.log(getYearArrow(publicationDate));
 ```
+
+## Logical Operators
+```
+// const book = getBook(2); Taking book 2
+// short circuiting
+
+// AND operator
+console.log(true && 'Some string'); // 'some string'
+console.log(false && 'Some string'); // false
+
+
+console.log(hasMovieAdaptation && 'This book has a movie'); // false 
+
+
+console.log("jonas" && 'Some string'); // 'some string' (here is a truthy value)
+
+// falsy values: false, 0, "", null, undefined, NaN
+console.log(0 && 'Some string'); // 0
+console.log(false && 'Some string'); // false
+console.log(null && 'Some string'); // null
+console.log(undefined && 'Some string'); // undefined
+console.log(NaN && 'Some string'); // NaN
+console.log('' && 'Some string'); // ''
+
+
+// OR operator
+console.log(true || 'Some string'); // true
+console.log(false || 'Some string'); // 'Some string'
+console.log('jonas' || 'Some string'); // 'jonas'
+
+console.log(0 || 'Some string'); // 'Some string'
+console.log(false || 'Some string'); // 'Some string'
+console.log(null || 'Some string'); // 'Some string'
+console.log(undefined || 'Some string'); // 'Some string'
+console.log(NaN || 'Some string'); // 'Some string'
+console.log('' || 'Some string'); // 'Some string'
+
+const spanishTranslation = book.translations.spanish || "No translation available";
+console.log(spanishTranslation); // 'No translation available'
+
+console.log(book.reviews.librarything.reviewsCount); // 0
+
+const countwrong = book.reviews.librarything.reviewsCount || "no reviews";
+console.log(countwrong); // 'no reviews'
+
+// nullish coalescing operator
+const count = book.reviews.librarything.reviewsCount ?? "no reviews";
+console.log(count); // 0
+```
