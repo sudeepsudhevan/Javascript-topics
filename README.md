@@ -297,7 +297,7 @@ console.log(count); // 0
 
 ## Optional Chaining
 
-```
+```js
 function getTotalReviewCount(book) {
   const goodreads = book.reviews.goodreads?.reviewsCount;
   const librarything = book.reviews.librarything?.reviewsCount ?? 0;
