@@ -294,3 +294,16 @@ console.log(countwrong); // 'no reviews'
 const count = book.reviews.librarything.reviewsCount ?? "no reviews";
 console.log(count); // 0
 ```
+
+## Optional Chaining
+
+```
+function getTotalReviewCount(book) {
+  const goodreads = book.reviews.goodreads?.reviewsCount;
+  const librarything = book.reviews.librarything?.reviewsCount ?? 0;
+  console.log(goodreads, librarything); // [49701, 0]
+  return goodreads + librarything;
+}
+
+console.log(getTotalReviewCount(book)); // 49701
+```
