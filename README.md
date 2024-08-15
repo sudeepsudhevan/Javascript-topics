@@ -232,5 +232,15 @@ console.log(`The book has ${pagesRange} pages.`);
 s = `The book has ${hasMovieAdaptation ? "been" : "not been"} adapteded as a movie`
 console.log(s)
 ```
+## Arrow Functions
 
+```
+function getYear(str) { // when using function
+  return str.split("-")[0];
+}
 
+const getYearArrow = (str) => str.split("-")[0]; // when using arrow function
+
+console.log(getYear(publicationDate));
+console.log(getYearArrow(publicationDate));
+```
