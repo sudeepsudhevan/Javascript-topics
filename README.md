@@ -219,3 +219,18 @@ const summary  = `The book ${title} was written by ${author} in the year ${publi
 
 console.log(summary);
 ```
+
+## Ternary operators
+
+```js
+const {title, author, pages, publicationDate, genres, hasMovieAdaptation} = getBook(2);
+
+const pagesRange = pages > 1000 ? 'over a thousand' : 'under a thousand';
+
+console.log(`The book has ${pagesRange} pages.`);
+
+s = `The book has ${hasMovieAdaptation ? "been" : "not been"} adapteded as a movie`
+console.log(s)
+```
+
+
