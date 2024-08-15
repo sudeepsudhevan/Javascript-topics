@@ -1,6 +1,6 @@
 # Javascript-topics
 
-```
+```js
 const data = [
   {
     id: 1,
@@ -147,7 +147,7 @@ function getBook(id) {
 }
 ```
 ## Destructuring
-```
+```js
 const books = getBooks();
 
 const book = getBook(1);
@@ -176,7 +176,7 @@ console.log(primaryGenre, secondaryGenre);
 ```
 
 ## Rest Operator
-```
+```js
 const [primaryGenre, secondaryGenre, ...otherGenres] = genres;  // when using array
 
 // const [primaryGenre, ...otherGenres,secondaryGenre] = genres; // error
@@ -191,7 +191,7 @@ console.log(title, author, otherBookdata);
 
 ## Spread Operator
 
-```
+```js
 const newGenres = [...genres, "dystopia"] // when using array
 
 const newGenres2 = ["dystopia", ...genres]
