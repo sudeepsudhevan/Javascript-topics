@@ -215,7 +215,7 @@ console.log(updatedBook);
 ## Template literals
 
 ```js
-const summary  = `The book ${title} was written by ${author} in the year ${publicationDate}`
+const summary  = `The book ${title} was written by ${author} in the year ${publicationDate.split("-")[0]}`
 
 console.log(summary);
 ```
