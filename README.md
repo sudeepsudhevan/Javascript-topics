@@ -240,6 +240,7 @@ function getYear(str) { // when using function
 }
 
 const getYearArrow = (str) => str.split("-")[0]; // when using arrow function
+// const getYearArrow = (str) => {return str.split("-")[0]}; // when using arrow function
 
 console.log(getYear(publicationDate));
 console.log(getYearArrow(publicationDate));
