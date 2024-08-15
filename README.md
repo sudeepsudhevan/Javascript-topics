@@ -177,11 +177,16 @@ console.log(primaryGenre, secondaryGenre);
 
 ## Rest Operator
 ```
-const [primaryGenre, secondaryGenre, ...otherGenres] = genres; 
+const [primaryGenre, secondaryGenre, ...otherGenres] = genres;  // when using array
 
 // const [primaryGenre, ...otherGenres,secondaryGenre] = genres; // error
 
 console.log(primaryGenre, secondaryGenre, otherGenres);
+
+
+const {title, author, ...otherBookdata} = book;    // when using object
+
+console.log(title, author, otherBookdata);
 ```
 
 ## Spread Operator
