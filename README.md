@@ -366,3 +366,21 @@ console.log(adventureBooks);
 const totalPages = books.reduce((acc, book) => acc + book.pages, 0);
 console.log(totalPages);
 ```
+## Array Sort
+
+```js
+// Array sort
+
+const x = [3,7,2,5,1,4];
+const sorted = x.sort((a,b) => a - b);
+console.log(sorted); // [1, 2, 3, 4, 5, 7]
+
+const y = [3,7,2,5,1,4];
+const sorted1 = y.slice().sort((a,b) => b - a);
+console.log(sorted1); // [7, 5, 3, 4, 2, 1]
+
+console.log(x,y); // [1, 2, 3, 4, 5, 7] [3, 7, 2, 5, 1, 4]
+
+const sortedBypages = books.slice().sort((a,b) => b.pages - a.pages);
+console.log(sortedBypages);
+```
