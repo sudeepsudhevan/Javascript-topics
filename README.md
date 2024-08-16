@@ -344,3 +344,18 @@ const essentialData = books.map((book) => ({
 }));
 console.log(essentialData);
 ```
+## Array filtering
+
+```
+const longBooks = books.filter((book) => book.pages > 500);
+console.log(longBooks);
+
+const longBookswithmovieadaptation = books
+  .filter((book) => book.pages > 500)
+  .filter((book) => book.hasMovieAdaptation);
+console.log(longBookswithmovieadaptation);
+
+const adventureBooks = books.filter((book) => 
+  book.genres.includes("adventure")).map((book) => book.title); 
+console.log(adventureBooks);
+```
