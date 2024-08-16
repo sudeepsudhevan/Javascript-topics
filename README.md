@@ -369,8 +369,6 @@ console.log(totalPages);
 ## Array Sort
 
 ```js
-// Array sort
-
 const x = [3,7,2,5,1,4];
 const sorted = x.sort((a,b) => a - b);
 console.log(sorted); // [1, 2, 3, 4, 5, 7]
