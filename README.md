@@ -386,7 +386,7 @@ console.log(sortedBypages);
 
 ### 1) Add book object to array
 
-```
+```js
 const newBook = {
   id: 6,
   title: "The Hobbit",
@@ -420,14 +420,14 @@ console.log(booksAfterAdding);
 
 ### 2) Remove book object from array
 
-```
+```js
 const booksAfterRemoving = booksAfterAdding.filter((book) => book.id !== 3);
 console.log(booksAfterRemoving);
 ```
 
 ### 3) Update book object in array
 
-```
+```js
 const booksAfterUpdating = booksAfterRemoving.map((book) =>
   book.id === 1 ? {...book, pages: 1} : book
 );
