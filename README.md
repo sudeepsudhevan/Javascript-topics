@@ -433,3 +433,12 @@ const booksAfterUpdating = booksAfterRemoving.map((book) =>
 );
 console.log(booksAfterUpdating);
 ```
+
+## Asynchronous JavaScript - Promises
+
+```js
+fetch('https://jsonplaceholder.typicode.com/todos')
+  .then((res) => {res.json()
+  .then((data) => console.log(data));
+})
+```
