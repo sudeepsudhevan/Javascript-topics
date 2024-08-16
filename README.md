@@ -382,3 +382,54 @@ console.log(x,y); // [1, 2, 3, 4, 5, 7] [3, 7, 2, 5, 1, 4]
 const sortedBypages = books.slice().sort((a,b) => b.pages - a.pages);
 console.log(sortedBypages);
 ```
+## working with immutable arrays
+
+### 1) Add book object to array
+
+```
+const newBook = {
+  id: 6,
+  title: "The Hobbit",
+  publicationDate: "1937-09-21",
+  author: "J. R. R. Tolkien",
+  genres: ["fantasy", "high-fantasy", "adventure"],
+  hasMovieAdaptation: true,
+  pages: 310,
+  translations: {
+    spanish: "El Hobbit",
+    chinese: "哥布林",
+    french: "Le Hobbit",
+  },
+  reviews: {
+    goodreads: {
+      rating: 4.52,
+      ratingsCount: 630994,
+      reviewsCount: 13417, 
+    },
+    librarything: {
+      rating: 4.53,
+      ratingsCount: 47166,
+      reviewsCount: 0,
+    },
+  },
+};
+
+const booksAfterAdding = [...books, newBook];
+console.log(booksAfterAdding);
+```
+
+### 2) Remove book object from array
+
+```
+const booksAfterRemoving = booksAfterAdding.filter((book) => book.id !== 3);
+console.log(booksAfterRemoving);
+```
+
+### 3) Update book object in array
+
+```
+const booksAfterUpdating = booksAfterRemoving.map((book) =>
+  book.id === 1 ? {...book, pages: 1} : book
+);
+console.log(booksAfterUpdating);
+```
