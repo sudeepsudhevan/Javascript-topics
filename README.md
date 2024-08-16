@@ -346,7 +346,7 @@ console.log(essentialData);
 ```
 ## Array filtering
 
-```
+```js
 const longBooks = books.filter((book) => book.pages > 500);
 console.log(longBooks);
 
